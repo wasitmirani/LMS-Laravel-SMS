@@ -1,0 +1,9 @@
+{
+  "version": "6.3.3",
+  "release_date": "24/10/2021",
+  "migrations": [
+	   "database/migrations/2021_10_14_142832_update_tables_from_v631_to_v632.php"
+  ],
+  "url": "https://spondonit.com/contact",
+  "notes": "This is a bug fixing update."
+}
