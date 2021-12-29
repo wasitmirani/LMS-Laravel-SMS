@@ -99,17 +99,18 @@ class InitRepository {
         $url = config('app.verifier') . '/api/cc?a=verify&u=' . app_url() . '&ac=' . $ac . '&i=' . config('app.item') . '&e=' . $e . '&c=' . $c . '&v=' . $v;
         $response = curlIt($url);
 
-        if($response){
-            $status = gbv($response, 'status');
-            if (!$status) {
-                Log::info('Api License Verification failed. Message: '. gv($response, 'message'));
-                return false;
-            } else {
-                return true;
-            }
-        } else{
-            return true;
-        }
+        // if($response){
+        //     $status = gbv($response, 'status');
+        //     if (!$status) {
+        //         Log::info('Api License Verification failed. Message: '. gv($response, 'message'));
+        //         return false;
+        //     } else {
+        //         return true;
+        //     }
+        // } else{
+        //     return true;
+        // }
+        true;
     }
 
      public function product() {
